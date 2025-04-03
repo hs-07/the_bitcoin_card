@@ -5,9 +5,9 @@ import Button from "./button";
 
 const Navbar = () => {
   return (
-    <div className="w-full absolute top-0 left-0 sticky z-[100] bg-white z-[9999]">
+    <div className="w-full absolute  top-0 left-0 sticky z-[100] bg-white z-[9999]">
       {/* Desktop Navbar */}
-      <nav className="flex w-full px-4 md:px-16 py-4 items-center justify-center md:justify-between">
+      <nav className="flex w-full px-4 h-[4rem] md:px-16 py-2 items-center justify-center md:justify-between">
         <div className="h-full flex items-center gap-4">
           <Image
             src="/logo.svg"
