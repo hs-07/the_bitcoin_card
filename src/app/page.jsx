@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Section2, Section3, TickerBanner } from "@/components";
+import { Section2, Section3, Section4, TickerBanner } from "@/components";
 import { Button } from "@/components/ui";
 
 export default function Home() {
@@ -43,6 +43,9 @@ export default function Home() {
 
       <div className="">
         <Section3 />
+      </div>
+      <div className="px-4 md:px-0">
+        <Section4 />
       </div>
     </div>
   );
