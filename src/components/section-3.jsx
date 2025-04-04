@@ -21,7 +21,7 @@ const Section3 = () => {
   ];
   return (
     <div className="w-full h-full md:px-16 ">
-      <div className="w-full flex justify-center py-20 px-4">
+      <div className="w-full flex justify-center py-24 px-4">
         <h1 className="font-bold text-[40px] md:text-[64px] lg:text-[96px] leading-[1.2] font-onest text-secondary text-center">
            The Bitcoin Card{" "}
         </h1>
