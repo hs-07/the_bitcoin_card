@@ -1,7 +1,7 @@
 "use client";
-import { Section2 } from "@/components";
-import { Button } from "@/components/ui";
 import Image from "next/image";
+import { Section2, TickerBanner } from "@/components";
+import { Button } from "@/components/ui";
 
 export default function Home() {
   return (
@@ -35,6 +35,10 @@ export default function Home() {
       </div>
       <div className="p-4 md:p-16 h-fit">
         <Section2 />
+      </div>
+
+      <div className="my-8">
+        <TickerBanner />
       </div>
     </div>
   );

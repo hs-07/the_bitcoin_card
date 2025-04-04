@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ticker {
+  display: flex;
+  animation: ticker-scroll 10s linear infinite;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.ticker li {
+  flex-shrink: 0;
+}
