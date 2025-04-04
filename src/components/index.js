@@ -4,3 +4,4 @@ export { default as TickerBanner } from "./ticker-banner";
 export { default as Section4 } from "./section-4";
 export { default as Section5 } from "./section-5";
 export { default as Section6 } from "./section-6";
+export { default as FAQs } from "./FAQs";
