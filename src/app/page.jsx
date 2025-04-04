@@ -1,7 +1,15 @@
 "use client";
 import Image from "next/image";
-import { Section2, Section3, Section4, TickerBanner } from "@/components";
+import {
+  Section2,
+  Section3,
+  Section4,
+  TickerBanner,
+  Section5,
+  Section6,
+} from "@/components";
 import { Button } from "@/components/ui";
+import { HOW_IT_WORKS, WHO_WE_ARE } from "@/utils/constants";
 
 export default function Home() {
   return (
@@ -47,6 +55,17 @@ export default function Home() {
       <div className="px-4 md:px-0">
         <Section4 />
       </div>
+      <Section5
+        items={HOW_IT_WORKS}
+        title={"How it works"}
+        className={"grid-cols-1 md:grid-cols-2"}
+      />
+      <Section6 />
+      <Section5
+        items={WHO_WE_ARE}
+        title={"Who we are"}
+        className={"grid-cols-1 md:grid-cols-3"}
+      />
     </div>
   );
 }
