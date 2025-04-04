@@ -1,4 +1,5 @@
 "use client";
+import { Section2 } from "@/components";
 import { Button } from "@/components/ui";
 import Image from "next/image";
 
@@ -31,6 +32,9 @@ export default function Home() {
             <Button type={"SECONDARY"} text={"Get Early Access"} />
           </div>
         </div>
+      </div>
+      <div className="p-4 md:p-16 h-fit">
+        <Section2 />
       </div>
     </div>
   );
