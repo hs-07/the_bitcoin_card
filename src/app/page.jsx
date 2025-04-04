@@ -7,8 +7,9 @@ import {
   TickerBanner,
   Section5,
   Section6,
+  FAQs,
 } from "@/components";
-import { Button } from "@/components/ui";
+import { Button, Footer } from "@/components/ui";
 import { HOW_IT_WORKS, WHO_WE_ARE } from "@/utils/constants";
 
 export default function Home() {
@@ -66,6 +67,10 @@ export default function Home() {
         title={"Who we are"}
         className={"grid-cols-1 md:grid-cols-3"}
       />
+
+      <FAQs />
+
+      <Footer />
     </div>
   );
 }

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
-export default function Accordion({ items }) {
+export default function Accordion({ item, index }) {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggle = (index) => {
@@ -11,31 +11,33 @@ export default function Accordion({ items }) {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto space-y-4">
-      {items.map((item, index) => (
-        <div key={index} className="border rounded-xl shadow-sm">
-          <button
-            onClick={() => toggle(index)}
-            className="w-full flex justify-between items-center p-4 text-left font-medium text-gray-800 hover:bg-gray-50 transition"
-          >
-            <span>{item.heading}</span>
-            {openIndex === index ? (
-              <FiMinus className="h-5 w-5 text-gray-500" />
-            ) : (
-              <FiPlus className="h-5 w-5 text-gray-500" />
-            )}
-          </button>
-          <div
-            className={`px-4 pb-4 text-gray-600 transition-all duration-300 ease-in-out ${
-              openIndex === index
-                ? "max-h-40 opacity-100"
-                : "max-h-0 opacity-0 overflow-hidden"
-            }`}
-          >
-            {item.content}
-          </div>
+    <div className="w-full">
+      <div className="bg-bg_color text-secondary rounded-xl px-4 md:px-12 lg:px-16  shadow-sm py-4 md:py-6 lg:py-8 flex flex-col">
+        <button
+          onClick={() => toggle(index)}
+          className={`${
+            openIndex === index ? "pb-6" : ""
+          } w-full flex justify-between items-center text-left font-medium text-gray-800  transition`}
+        >
+          <span className="font-onest font-bold text-[24px] md:text-[40px]">
+            {item.heading}
+          </span>
+          {openIndex === index ? (
+            <FiMinus className="h-6 w-6 text-gray-500" />
+          ) : (
+            <FiPlus className="h-6 w-6 text-gray-500" />
+          )}
+        </button>
+        <div
+          className={`font-oxygen text-[16px] md:text-[24px] text-gray-600 transition-all duration-300 ease-in-out ${
+            openIndex === index
+              ? "max-h-40 opacity-100"
+              : "max-h-0 opacity-0 overflow-hidden"
+          }`}
+        >
+          {item.content}
         </div>
-      ))}
+      </div>
     </div>
   );
 }
