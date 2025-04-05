@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${onest.variable} ${oxygen.variable} ${sofia.variable} antialiased`}
+        className={`${onest.variable} ${oxygen.variable} ${sofia.variable} antialiased scroll-smooth`}
       >
         <Navbar />
         {children}
