@@ -27,7 +27,7 @@ const Section3 = () => {
         </h1>
       </div>
 
-      <div className="flex shrink-0 overflow-x-auto md:overflow-x-hidden md:grid grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 px-4 md:px-0">
+      <div className="flex shrink-0 no-scrollbar overflow-x-auto md:overflow-x-hidden md:grid grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 px-4 md:px-0">
         {items.map((item, index) => (
           <div
             className={`${
