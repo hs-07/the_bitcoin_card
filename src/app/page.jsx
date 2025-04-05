@@ -8,6 +8,7 @@ import {
   Section5,
   Section6,
   FAQs,
+  Contact,
 } from "@/components";
 import { Button, Footer } from "@/components/ui";
 import { HOW_IT_WORKS, WHO_WE_ARE } from "@/utils/constants";
@@ -69,6 +70,9 @@ export default function Home() {
       />
 
       <FAQs />
+      <div className="mt-4 md:mt-16">
+        <Contact />
+      </div>
 
       <Footer />
     </div>
