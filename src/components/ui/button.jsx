@@ -9,7 +9,7 @@ const Button = ({ type, text }) => {
           : type === "SECONDARY"
           ? "text-primary bg-white"
           : "text-black"
-      } rounded-md justify-center font-bold md:rounded-xl font-onest border-none px-6 py-2 text-sm md:text-lg flex flex-nowrap shrink-0`}
+      } rounded-lg min-h-[50px] items-center justify-center font-bold md:rounded-xl font-onest border-none px-6 py-2 text-lg flex flex-nowrap shrink-0`}
     >
       {text}
     </button>

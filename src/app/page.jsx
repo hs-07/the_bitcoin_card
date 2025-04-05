@@ -16,7 +16,7 @@ import { HOW_IT_WORKS, WHO_WE_ARE } from "@/utils/constants";
 export default function Home() {
   return (
     <div className="flex flex-col w-full h-full">
-      <div className="flex flex-col md:flex-row w-full gap-8 md:gap-4 h-full pt-16 pb-4 md:pb-0 md:pt-0 md:h-[calc(100vh-4rem)] justify-between bg-[url('/hero-bg.svg')] bg-cover bg-center px-4 md:px-16">
+      <div className="flex flex-col md:flex-row w-full gap-8 md:gap-4 h-full pt-16 md:pb-0 md:pt-0 md:h-[calc(100vh-4rem)] justify-between bg-[url('/hero-bg.svg')] bg-cover bg-center px-4 md:px-16">
         <div className="w-fit text-white h-full flex flex-col justify-center ">
           <span className=" font-onest text-[40px] md:text-[56px] lg:text-[96px] leading-[1.2] font-bold max-w-[800px] pb-2">
             {" "}
@@ -30,7 +30,7 @@ export default function Home() {
             <Button type={"SECONDARY"} text={"Get Early Access"} />
           </div>
         </div>
-        <div className="w-full md:w-fit h-full flex flex-col md:flex-row items-center md:items-end gap-6">
+        <div className="w-full md:w-fit h-full flex flex-col md:flex-row items-center md:items-end">
           <Image
             src={"/hero-1.svg"}
             alt="hero"
@@ -38,7 +38,7 @@ export default function Home() {
             height={50}
             className="w-full h-[80%]"
           />
-          <div className="md:hidden flex">
+          <div className="md:hidden flex p-6 bg-[#F1683C] w-full justify-center items-center">
             <Button type={"SECONDARY"} text={"Get Early Access"} />
           </div>
         </div>

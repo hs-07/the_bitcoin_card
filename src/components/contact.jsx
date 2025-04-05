@@ -66,7 +66,7 @@ const Contact = () => {
       <div className="font-onest text-[40px] md:text-[64px] lg:text-[96px] font-bold text-center leading-[1.2] md:text-start text-secondary md:w-1/2">
         Join the waiting list
       </div>
-      <div className="md:w-1/2 bg-white rounded-3xl py-4 md:p-6 flex flex-col">
+      <div className="w-full md:w-1/2 bg-white rounded-3xl p-4 md:p-6 flex flex-col">
         {submitStatus && (
           <div
             className={`mb-4 p-4 font-oxygen rounded-xl ${
