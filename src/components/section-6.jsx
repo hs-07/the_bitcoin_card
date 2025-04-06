@@ -47,7 +47,7 @@ const Section6 = () => {
             alt="activities"
             width={70}
             height={70}
-            className="w-3/4 md:w-full"
+            className="w-3/4 md:w-full -mb-[4px] md:-mb-[6px]"
           />
         </div>
       </div>
